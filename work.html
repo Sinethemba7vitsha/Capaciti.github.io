@@ -6,7 +6,142 @@
     <link href="styles.css" rel="stylesheet">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
-    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f4ec;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            color: #333;
+        }
+
+        /* Layout Grid */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            width: 80%;
+            margin: 100px auto;
+        }
+
+        /* Experience Section */
+        .experience-section {
+            grid-column: 1 / 2;
+            background-color: whitesmoke;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .experience-section h1 , .education-section h1 , .tech-stack-section h1{
+            font-family: 'Playfair Display', serif;
+            color: #2d2d2d;
+        }
+        .tech-stack-section h2 , h3{
+            font-family: 'Playfair Display', serif;
+        }
+
+        .experience-section p {
+            font-size: 18px;
+            color: #333;
+            margin: 30px 0;
+        }
+
+        /* Tech Stack Section */
+        .tech-stack-section {
+            grid-column: 2 / 3;
+            background-color: whitesmoke;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .tech-stack-section h3, .tech-stack-section h4 {
+            font-family: 'Playfair Display', serif;
+            color: #2d2d2d;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack-section p {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* Education Section */
+        .education-section {
+            grid-column: 3 / 4;
+            background-color: whitesmoke;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .education-section h3 {
+            font-family: 'Playfair Display', serif;
+            color: #2d2d2d;
+            margin-bottom: 15px;
+        }
+
+        .education-section p {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* Floating Blocks */
+        .floating-block {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #E5E5E5, #d4c1ff);
+            border-radius: 12px;
+        }
+
+        .floating-block1 {
+            top: 50px;
+            left: 20px;
+        }
+
+        .floating-block2 {
+            top: 200px;
+            right: 100px;
+        }
+
+        .floating-block3 {
+            bottom: 100px;
+            left: 50px;
+        }
+
+        .floating-block4 {
+            bottom: 50px;
+            right: 200px;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,15 +153,47 @@
         <a href="contacts.html">Contact</a>
     </div>
 
-   
+    <!-- Layout Grid -->
+    <div class="layout-grid">
+        
+        <!-- Experience Section -->
+        <div class="experience-section">
+            <h1>Work Experience</h1>
+            <p>Bitcube   : October 2022 to January 2023</p>
+            <p> SADPMR   : April 2023 to March 2024</p>
+            <p> Capaciti : September 2024 to Present</p>
+        </div>
+
+        <!-- Tech Stack Section -->
+        <div class="tech-stack-section">
+            <h1>Tech Stack</h1>
+            <h3>Front End Development</h3>
+            <p>HTML, CSS , Javascript , React </p>
+
+            <h3>Back End Development</h3>
+            <p>Java && C#</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="education-section">
+            <h1>Education</h1>
+            <p>Diploma in Information Technology</p>
+
+            <h3>Certification</h3>
+            <p>CompTIA Network Plus</p>
+        </div>
+    </div>
+
     <!-- Floating Blocks -->
     <div class="floating-block floating-block1"></div>
     <div class="floating-block floating-block2"></div>
     <div class="floating-block floating-block3"></div>
     <div class="floating-block floating-block4"></div>
 
-
-      <!--<footer>&copy; 2024 Sinethemba Vitsha </footer>-->
+    <!--  <footer>
+        <p>&copy; 2024 &gt;Sinethemba Vitsha</p>
+    </footer>-->
+   
 
 </body>
 </html>
