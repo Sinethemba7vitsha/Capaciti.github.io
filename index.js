@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  
   document.addEventListener("DOMContentLoaded", function() {
     const text = "Hi. I’m Sinethemba Vitsha.\nA Full Stack Developer.";
     const typewriterText = document.getElementById("typewriter-text");
