@@ -6,7 +6,13 @@
     <link href="styles.css" rel="stylesheet">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
-    
+    <style>
+        .typewriter h1 {
+            border-right: 2px solid;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,9 +27,13 @@
     <!-- Container -->
     <div class="container">
         <div class="text-section">
-            <h1 >Hi. I’m Sinethemba Vitsha.<br>A Full Stack Developer.</h1>
-            <button id="downloadButton">Download CV</button>
-            <button onclick="location.href='contacts.html'">Contact Info</button>
+            <h1 id="typewriter-text"></h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2" id="downloadButton">Download CV</button>
+                <button class="btn btn-color-2" onclick="location.href='contacts.html'">
+                  Contact Info
+                </button>
+              </div>
         </div>
         <div class="image-section">
             <img src="image.jpg" alt="Eye Icon">
@@ -41,7 +51,7 @@
 
 
 
-
+    <script src="index.js"></script> 
 </body>
 
 </html>
