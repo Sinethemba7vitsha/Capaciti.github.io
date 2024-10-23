@@ -8,7 +8,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
     <link rel="icon" href="image.jpg" type="image/png">
     <style>
-   
+        /* Navigation */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            color: #333;
+        }
+
+        /* Layout Grid */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+            gap: 40px;
+            width: 80%;
+            margin: 100px auto;
+            overflow-x: hidden; /* Hide overflow for sliding effect */
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: whitesmoke;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            transition: transform 0.3s ease; /* Add transition for sliding effect */
+        }
+
+        h1, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #2d2d2d;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 800px) {
+            .layout-grid {
+                display: flex; /* Change to flexbox for sliding effect */
+                overflow-x: auto; /* Allow horizontal scrolling */
+                scroll-snap-type: x mandatory; /* Enable snap scrolling */
+            }
+
+            .section {
+                flex: 0 0 80%; /* Take up 80% width */
+                scroll-snap-align: start; /* Align items to start */
+                margin-right: 20px; /* Spacing between cards */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .section {
+                flex: 0 0 100%; /* Full width on small screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -25,25 +95,25 @@
     <div class="layout-grid">
         
         <!-- Experience Section -->
-        <div class="experience-section">
+        <div class="experience-section section">
             <h1>Work Experience</h1>
-            <p>Bitcube   : October 2022 to January 2023</p>
-            <p> SADPMR   : April 2023 to March 2024</p>
-            <p> Capaciti : September 2024 to Present</p>
+            <p>Bitcube: October 2022 to January 2023</p>
+            <p>SADPMR: April 2023 to March 2024</p>
+            <p>Capaciti: September 2024 to Present</p>
         </div>
 
         <!-- Tech Stack Section -->
-        <div class="tech-stack-section">
+        <div class="tech-stack-section section">
             <h1>Tech Stack</h1>
             <h3>Front End Development</h3>
-            <p>HTML, CSS , Javascript , React </p>
+            <p>HTML, CSS, JavaScript, React</p>
 
             <h3>Back End Development</h3>
             <p>Java && C#</p>
         </div>
 
         <!-- Education Section -->
-        <div class="education-section">
+        <div class="education-section section">
             <h1>Education</h1>
             <p>Diploma in Information Technology</p>
 
@@ -52,14 +122,11 @@
         </div>
     </div>
 
-    <!-- Floating Blocks -->
-    <div class="floating-block floating-block1"></div>
-    <div class="floating-block floating-block2"></div>
-    <div class="floating-block floating-block3"></div>
-    <div class="floating-block floating-block4"></div>
+    <script>
+        // Optional: You can add any JS functionality here if needed
+        // For example, you can handle button clicks to slide the sections
+    </script>
 
-    <footer>&copy; 2024 Sinethemba Vitsha </footer>
-   
-
+    <!--<footer>&copy; 2024 Sinethemba Vitsha </footer>-->
 </body>
 </html>

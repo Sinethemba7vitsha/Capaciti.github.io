@@ -14,6 +14,81 @@
             white-space: nowrap;
             overflow: hidden;
         }
+
+        /* Adjusting background to be less dark */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1e8d7; /* Lighter beige background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container styles for the image and text */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+        }
+
+        .text-section {
+            max-width: 500px;
+        }
+
+        /* Increasing the image size slightly */
+        .image-section {
+            background-color: #333; /* Darker background for the image section */
+            width: 500px;  /* Slightly increased width */
+            height: 600px; /* Increased height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-section img {
+            width: 85%; /* Increased image width */
+            height: auto;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .text-section h1 {
+                font-size: 2.5em;  /* Smaller font size on medium screens */
+            }
+
+            .image-section {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                width: 80%;  /* Adjust width for medium screens */
+                height: auto; /* Remove fixed height */
+            }
+
+            .image-section img {
+                width: 80%; /* Adjust image width for medium screens */
+                height: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text-section h1 {
+                font-size: 2em;  /* Further reduce font size for small screens */
+            }
+
+            .image-section {
+                width: 100%; /* Full width for small screens */
+                height: 100; /* Auto height */
+            }
+
+            .image-section img {
+                width: 90%; /* Adjust image width for small screens */
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -32,32 +107,16 @@
             <h1 id="typewriter-text"></h1>
             <div class="btn-container">
                 <button class="btn btn-color-2" id="downloadButton">Download CV</button>
-                <button class="btn btn-color-2" onclick="location.href='contacts.html'">
-                  Contact Info
-                </button>
-              </div>
+                <button class="btn btn-color-2" onclick="location.href='contacts.html'">Contact Info</button>
+            </div>
         </div>
         <div class="image-section">
             <img src="image.jpg" alt="Eye Icon">
         </div>
     </div>
-
-  
+ 
+    <!--<footer>&copy; 2024 Sinethemba Vitsha </footer>-->
     <!---->
-
-    <!-- Floating Blocks -->
-    <div class="floating-block floating-block1"></div>
-    <div class="floating-block floating-block2"></div>
-    <div class="floating-block floating-block3"></div>
-    <div class="floating-block floating-block4"></div>
-
-    <footer>&copy; 2024 Sinethemba Vitsha </footer>
-
     <script src="index.js"></script> 
 </body>
-
 </html>
-
-
-
-

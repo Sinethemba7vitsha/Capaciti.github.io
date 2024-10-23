@@ -3,23 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
     <link rel="icon" href="image.jpg" type="image/png">
     <title>Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
     
+    <!-- Embedded CSS -->
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .navbar a:hover {
+            color: #333;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .projects-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            color: #2d2d2d;
+            margin-bottom: 40px;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .project {
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(45% - 30px);
+            max-width: calc(45% - 30px);
+            height: 250px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+        }
+
+        .project h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            z-index: 1;
+        }
+
+        .project p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            z-index: 1;
+        }
+
+        .project a {
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        /* Hover Effects */
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project a:hover {
+            background-color: #444;
+        }
+
+        /* Dark overlay for readability */
+        .project::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .project h3, .project p, .project a {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .projects-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .project {
+                flex: 1 1 calc(45% - 20px);
+                max-width: calc(45% - 20px);
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .projects-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .project {
+                flex: 1 1 100%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .projects-section h2 {
+                font-size: 2.5em;
+            }
+
+            .project {
+                padding: 15px;
+                height: auto;
+            }
+
+            .project a {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-          <!-- Navbar -->
+    <!-- Navbar -->
     <div class="navbar">
         <a href="index.html">About</a>
         <a href="work.html">Work</a>
         <a href="projects.html">Projects</a>
         <a href="contacts.html">Contact</a>
     </div>
-    
-        <!-- Projects Section -->
+
+    <!-- Projects Section -->
     <div class="projects-section">
         <div class="projects-list">
             <!-- Project 1 -->
@@ -43,7 +207,7 @@
                 <a href="https://uvuafrica.com/capaciti/" target="_blank">View</a>
             </div>
 
-            <!-- Project 4 should be 600 by 400 -->
+            <!-- Project 4 -->
             <div class="project" style="background-image: url(github.jfif);">
                 <h3>GitHub Profile</h3>
                 <p>My GitHub Portfolio With Projects </p>
@@ -51,16 +215,6 @@
             </div>
         </div>
     </div>
-    
-        <!-- Floating Blocks -->
-        <div class="floating-block floating-block1"></div>
-        <div class="floating-block floating-block2"></div>
-        <div class="floating-block floating-block3"></div>
-        <div class="floating-block floating-block4"></div>
 
-
-        <footer>&copy; 2024 Sinethemba Vitsha </footer>
-    
-   
 </body>
 </html>

@@ -23,10 +23,10 @@ html {
     cursor: pointer;
     outline: none;
     text-align: center; /* Center the text horizontally */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Horizontally center the text */
-    align-items: center; /* Vertically center the text */
-    height: 3rem; /* Set a fixed height for buttons */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 3rem;
 }
 
 /* Main button color variations */
@@ -370,39 +370,6 @@ html {
 
 
 
-/*Work*/
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f8f4ec;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Navbar */
-.navbar {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 30px;
-    font-size: 18px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-}
-
-.navbar a:hover {
-    color: #333;
-}
-
 /* Layout Grid */
 .layout-grid {
     display: grid;
@@ -477,46 +444,3 @@ body {
     margin: 10px 0;
 }
 
-/* Floating Blocks */
-.floating-block {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(45deg, #E5E5E5, #d4c1ff);
-    border-radius: 12px;
-}
-
-.floating-block1 {
-    top: 50px;
-    left: 20px;
-}
-
-.floating-block2 {
-    top: 200px;
-    right: 100px;
-}
-
-.floating-block3 {
-    bottom: 100px;
-    left: 50px;
-}
-
-.floating-block4 {
-    bottom: 50px;
-    right: 200px;
-}
-
-
-/*Footer*/
-
-
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #f8f4ec; /* Matching your page background */
-    padding: 10px 0;
-    font-family: 'Inter', sans-serif;
-    color: #333;
-}
