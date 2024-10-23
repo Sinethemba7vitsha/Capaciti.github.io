@@ -18,7 +18,7 @@
         /* Adjusting background to be less dark */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f1e8d7; /* Lighter beige background */
+            background-color: #f1e8d7;
             margin: 0;
             padding: 0;
             display: flex;
@@ -41,54 +41,40 @@
 
         /* Increasing the image size slightly */
         .image-section {
-            background-color: #333; /* Darker background for the image section */
-            width: 500px;  /* Slightly increased width */
-            height: 600px; /* Increased height */
+            background-color: black;
+            width: 400px;  
+            height: 500px; 
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .image-section img {
-            width: 85%; /* Increased image width */
+            width: 85%; 
             height: auto;
         }
 
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .text-section h1 {
-                font-size: 2.5em;  /* Smaller font size on medium screens */
+                font-size: 2.5em; 
             }
 
             .image-section {
                 display: flex;
                 justify-content: center;
                 margin-top: 20px;
-                width: 80%;  /* Adjust width for medium screens */
-                height: auto; /* Remove fixed height */
+                width: 100%;  
+                height: auto; 
             }
 
             .image-section img {
-                width: 80%; /* Adjust image width for medium screens */
+                width: 100%; 
                 height: auto;
             }
         }
 
-        @media (max-width: 480px) {
-            .text-section h1 {
-                font-size: 2em;  /* Further reduce font size for small screens */
-            }
-
-            .image-section {
-                width: 100%; /* Full width for small screens */
-                height: 100; /* Auto height */
-            }
-
-            .image-section img {
-                width: 90%; /* Adjust image width for small screens */
-                height: auto;
-            }
-        }
+      
     </style>
 </head>
 <body>
