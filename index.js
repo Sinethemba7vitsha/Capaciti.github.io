@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to simulate typing animation
     function typeWriter(text, callback) {
         let index = 0;
-        const typingSpeed = 50;
+        const typingSpeed = 60;
         const p = document.createElement("p");
         chatbox.appendChild(p);
         chatbox.scrollTop = chatbox.scrollHeight; // Auto scroll to bottom
