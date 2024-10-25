@@ -1,0 +1,90 @@
+/* Chat icon */
+#chatIcon {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+/* Chatbot window */
+#chatbot {
+    width: 300px;
+    height: 400px;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Chatbox (where messages appear) */
+#chatbox {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: white;
+    border-bottom: 1px solid #007BFF;
+    max-height: 300px;
+}
+
+/* User Message Style */
+.user-message {
+    color: black; /* Text color */
+    background-color: lightgreen; /* Light green background */
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+/* Bot Message Style */
+.bot-message {
+    color: black; /* Text color */
+    background-color: #ffe6b3; /* Light orange background */
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Chat options */
+#chat-options {
+    padding: 10px;
+    background-color: lightgreen;
+    color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+/* Close button */
+#clear-chat, #close-chat {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 10px;
+    align-self: center;
+}
+
+#clear-chat:hover, #close-chat:hover{
+    background-color: #555;
+}
