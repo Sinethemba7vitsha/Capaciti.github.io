@@ -56,11 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function processUserQuestion(inputText) {
         const recognizedOptions = {
-            "who are you?": "My Name is Sinethemba Vitsha, I do Full Stack Development.",
-            "what do you do?": "I specialize in building web applications.",
-            "what is your tech stack?": "HTML, CSS, JavaScript, React.js, Java, and Spring Boot.",
-            "how many years of experience do you have?": "2 Years of Experience",
-            "how can i contact you?": "You can contact me via email, phone, or LinkedIn."
+            " Who are you ": "My Name is Sinethemba Vitsha, I do Full Stack Development.",
+            " What do you do ": "I specialize in building web applications.",
+            " What is your tech stack ": "HTML, CSS, JavaScript, React.js, Java, and Spring Boot.",
+            " Industry Exprience ": "2 Years of Experience",
+            " How can i contact you ": "You can contact me via email, phone, or LinkedIn."
         };
 
         const response = recognizedOptions[inputText.toLowerCase()];
@@ -75,17 +75,17 @@ document.addEventListener("DOMContentLoaded", function () {
         chatbox.innerHTML = ""; // Clear previous messages when starting chat
         displayMessage("Hello, I'm Sine the chatbot. How can I help you?", false, function () {
             showOptions([
-                { text: "Who are you?", response: "My Name is Sinethemba Vitsha, I do Full Stack Development." },
-                { text: "What do you do?", response: "I specialize in building web applications." },
-                { text: "What is your tech stack?", response: "HTML, CSS, JavaScript, React.js, Java, and Spring Boot." },
-                { text: "How many years of experience do you have?", response: "2 Years of Experience" },
+                { text: "Who are you ", response: "My Name is Sinethemba Vitsha, I do Full Stack Development." },
+                { text: "What do you do ", response: "I specialize in building web applications." },
+                { text: "What is your tech stack ", response: "HTML, CSS, JavaScript, React.js, Java, and Spring Boot." },
+                { text: "Industry Exprience ", response: "2 Years of Experience" },
                 {
                     text: "How can I contact you?",
                     response: "How would you like to contact me?",
                     followUp: [
                         { text: "Email", response: "You can contact me via email: Maxwellsucksatcode@gmail.com." },
                         { text: "Personal Number", response: "You can contact me via Phone Number: 063 921 8642." },
-                        { text: "LinkedIn", response: "You can reach me on LinkedIn: linkedin.com/in/sinethemba-vitsha" }
+                        { text: "LinkedIn", response: "You can reach me on LinkedIn:https://www.linkedin.com/in/sinethemba-vitsha-1620b1259/" }
                     ]
                 }
             ]);
