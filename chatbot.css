@@ -111,7 +111,7 @@
 }
 
 #chat-options button:hover {
-    background-color: #0056b3;
+    background-color: lightgreen;
 }
 
 /* Fixed footer for buttons */
@@ -138,6 +138,7 @@
 }
 
 #clear-chat:hover, #close-chat:hover {
-    background-color: #444;
+    background-color: burlywood;
+    color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
