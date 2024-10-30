@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     followUp: [
                         { text: "Email", response: "You can contact me via email: Maxwellsucksatcode@gmail.com." },
                         { text: "Personal Number", response: "You can contact me via Phone Number: 063 921 8642." },
-                        { text: "LinkedIn", response: "You can reach me on LinkedIn:https://www.linkedin.com/in/sinethemba-vitsha-1620b1259/" }
+                        { text: "LinkedIn", response: "You can reach me on LinkedIn: Sinethemba Vitsha" }
                     ]
                 }
             ]);
