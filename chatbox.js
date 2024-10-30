@@ -120,3 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+parseInt('')
