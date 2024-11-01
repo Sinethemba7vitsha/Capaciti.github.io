@@ -77,7 +77,7 @@
 /* Bot message styling */
 .bot-message {
     color: #333;
-    background-color: #e9f5ff;
+    background-color: lightgreen;
     padding: 10px 15px;
     border-radius: 15px 15px 15px 0;
     margin-bottom: 10px;
@@ -111,7 +111,7 @@
 }
 
 #chat-options button:hover {
-    background-color: lightgreen;
+    background-color:black;
 }
 
 /* Fixed footer for buttons */
@@ -137,8 +137,3 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#clear-chat:hover, #close-chat:hover {
-    background-color: burlywood;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
